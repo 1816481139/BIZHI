@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<!-- <button class="btn" bindtap="save">点击保存这个图片</button> -->
+<view class="imgshow">
+  <image class="img" mode="widthFix" src="{{datalist.photo}}" alt=""/>
+  <view class="title">{{datalist.title}}</view>
+  <view class="userbox">
+    <image  src="{{datalist.userpic}}"></image>
+    <view class="txtbox">
+      <view>{{datalist.username}}</view>
+      <view class="time">{{datalist.time}}</view>
+    </view>
+  </view>
+</view>
+<view class="buttom">
+  <view class="down" bindtap="save">
+    <image mode="widthFix" src="/image/download.png"></image>
+    <view>下载</view>
+  </view>
+</view>
+

@@ -1,0 +1,14 @@
+<!-- myDownloads.wxml -->
+<view class="container">
+  <view class="download-list">
+    <block wx:for="{{downloadList}}" wx:key="unique">
+      <view class="download-card">
+        <image class="download-thumb" src="{{item.imgUrl}}" mode="aspectFill"></image>
+        <view class="download-info">
+          <text class="download-user">上传用户：{{item.uploadUser}}</text>
+          <text class="download-time">下载时间：{{item.time}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

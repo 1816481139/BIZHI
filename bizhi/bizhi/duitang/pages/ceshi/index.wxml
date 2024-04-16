@@ -1,0 +1,3 @@
+<view>
+  <view bindtap="uploadFile" style="width: 500rpx; height: 500rpx; background-color: red;">上传</view>
+</view>

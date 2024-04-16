@@ -1,0 +1,61 @@
+/* pages/detail/detail.wxss */
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imgshow{
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  overflow: auto;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.imgshow .img{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10rpx;
+
+}
+.imgshow .title{
+  padding: 20rpx 10rpx;
+  font-size: 36rpx;
+}
+.imgshow .userbox{
+  height: 100rpx;
+  display: flex;
+}
+.imgshow .userbox image{
+   width: 70rpx;
+   height: 70rpx;
+   border-radius: 50%;
+}
+.userbox .txtbox{
+  margin-left: 30rpx;
+}
+.txtbox .time{
+  font-size: 24rpx;
+  color: #666666;
+}
+.buttom{
+  height: 150rpx;
+  width: 100%;
+  background-color: #ee8581;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttom .down{
+  width: 100rpx;
+  height: 140rpx;
+}
+.buttom .down image{
+  width: 100%;
+}
+.buttom .down view{
+  text-align: center;
+  color: white;
+  
+}

@@ -1,0 +1,38 @@
+<view class="content">
+<view class="nowupload_iconbg">
+  <view class="nowupload_icon">
+    <image src="/image/nowupload-tjtp.png" mode="" />
+    <text>图片上传</text>
+  </view>
+  <!-- 上传图片的方块 -->
+  <view class="upload-box" bindtap="chooseImage">
+    <image src="{{ imageUrl }}" class="image-preview" mode="aspectFill"></image>
+  </view>
+  <view class="upload-boxbt">点击上传图片</view>
+</view>
+
+ <view class="xz-bg">
+  <!-- 下拉框 -->
+  <view class="xz-bgtp">
+    <image src="/image/nowupload-tplx.png" mode="" />
+    <text>图片类型</text>
+  </view>
+  <picker mode="selector" range="{{ options }}" bindchange="bindPickerChange">
+    <view class="picker" >
+      {{ options[selectedOptionIndex] }}
+    </view>
+  </picker>
+
+  <view class="ip-tp">
+    <image src="/image/nowupload-tpmc.png" mode="" />
+    <text>图片名称</text>
+  </view>
+  <!-- 输入框 -->
+ <view class="input-bottom">
+  <input class="input" placeholder="请输入内容" bindinput="inputChange"></input>
+ </view>
+ </view>
+
+  <!-- 提交按钮 -->
+  <button class="submit-btn" bindtap="submitForm">上传</button>
+</view>

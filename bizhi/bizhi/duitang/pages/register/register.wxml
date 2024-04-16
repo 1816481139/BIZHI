@@ -1,0 +1,21 @@
+<view class="content">
+  <view class="regist-icon">
+    <image src="https://c-ssl.dtstatic.com/uploads/people/201908/23/20190823164218_8ZA3v.png" mode=""/>
+  </view> 
+  <view class="regist-input">
+    <view class="regist-inputin">
+      <image src="/image/register-zh.png" mode="" />
+      <input type="text" placeholder="请输入账号" bindinput="inputUser"/>
+    </view>
+    <view class="regist-inputin">
+      <image src="/image/register-mm.png" mode="" />
+      <input  type="password" placeholder="请输入密码" bindinput="inputPassword"/>
+    </view>
+  </view>
+  <view class="doregister" bindtap="doregister">
+      想起账号了去登录
+    </view>
+  <view class="registBtn" bind:tap="registBtn">
+    <button>注册</button>
+  </view>
+</view>

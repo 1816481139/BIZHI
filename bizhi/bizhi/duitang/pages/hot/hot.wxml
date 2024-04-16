@@ -1,0 +1,32 @@
+
+<view class="header">
+   <image class="logo" mode="widthFix" src="https://c-ssl.dtstatic.com/uploads/people/201908/23/20190823164218_8ZA3v.png"></image>
+   <view class="searchbox">
+     <input type="text" placeholder="堆糖热门搜索" class="txt" bindinput="search"/>
+     <view type="button" class="btn" bindtap="clickSearch">
+       <image src="/image/search.png"></image>
+     </view>
+   </view>
+</view>
+<view class="section">
+  <block wx:for="{{datalist}}" wx:key="this"  wx:for-index="in">
+    <view class="item">
+     <image class="img" mode="widthFix" src="{{app+item.img.img_url}}" bindtap="imgshow" data-index="{{in}}"></image>
+     <view class="content">
+       <view class="title">{{item.img.img_source}}</view>
+       <view class="userbox">
+          <text>{{item.img.user}}</text>
+       </view>
+       <text class="con">收录到: {{item.img.img_type}}</text>
+     </view>
+   </view>
+
+  </block>
+  <!-- 数据异常显示 -->
+  <!--  {{datalist.length===0? 'hidden':''}} -->
+  <view class="dataError {{datalist.length===0? 'hidden':''}} ">
+    <image mode="widthFix" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01f70e5b84aa32a8012190f269d9b5.gif&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656239063&t=0800ee390bfbc1ea00cb8d233ae4038a"></image>
+    <view>未找到当前搜索数据，请换其他关键词搜索...</view>
+  </view>
+
+</view>

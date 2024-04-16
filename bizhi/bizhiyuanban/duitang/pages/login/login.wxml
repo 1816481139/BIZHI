@@ -1,0 +1,13 @@
+<view class="wrap">
+    <view class="main_item">
+        <text class="item_label">账号</text>
+        <input class="item_input" type="text" placeholder="请输入账号" bindinput="inputAccount" />
+    </view>
+    <view class="main_item">
+        <text class="item_label">密码</text>
+        <input class="item_input" type="password" placeholder="请输入密码" bindinput="inputPassword" />
+    </view>
+    <view bindtap="doLogin" class="login">
+        登录
+    </view>
+</view>

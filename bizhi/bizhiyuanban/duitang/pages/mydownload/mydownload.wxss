@@ -1,0 +1,57 @@
+/* myDownloads.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.download-list {
+  width: 100%;
+}
+
+.download-card {
+  width: 96%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  height: 255rpx;
+  background-color: #fff;
+  border: 1px solid #eaeaea; /* 添加一个浅色框线 */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+}
+
+.download-thumb {
+  margin-left: 5px;
+  width: 30%; /* 图片宽度 */
+  height: 140px; /* 图片高度，根据需要调整 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.download-info {
+  flex-grow: 1; /* 让信息部分占据剩余空间 */
+  display: flex;
+  flex-direction: column; /* 设置为垂直布局 */
+  justify-content: center; /* 垂直居中 */
+  padding: 10px;
+}
+
+.download-user,
+.download-time {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px; /* 添加一点间距 */
+}
+/* 最后一个子元素不需要底部边距 */
+.download-info > view:last-child {
+  margin-bottom: 0;
+}
+
+.download-user {
+  color:#E76F6E
+}

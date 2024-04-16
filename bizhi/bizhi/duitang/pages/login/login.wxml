@@ -1,0 +1,19 @@
+<view class="wrap">
+  <view class="regist-icon">
+    <image src="https://c-ssl.dtstatic.com/uploads/people/201908/23/20190823164218_8ZA3v.png" mode=""/>
+  </view> 
+    <view class="main_item">
+        <image src="/image/register-zh.png" class="img" mode=""/>
+        <input class="item_input" type="text" placeholder="请输入账号" bindinput="inputAccount" />
+    </view>
+    <view class="main_item">
+        <image src="/image/register-mm.png" class="img" mode=""/>
+        <input class="item_input" type="password" placeholder="请输入密码" bindinput="inputPassword" />
+    </view>
+    <view class="doregister" bindtap="doregister">
+      没有账号去注册
+    </view>
+    <view bindtap="doLogin" class="login">
+        登录
+    </view>
+</view>

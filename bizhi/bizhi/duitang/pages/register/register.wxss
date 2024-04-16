@@ -1,0 +1,38 @@
+.content{
+  padding: 80rpx 50rpx;
+
+}
+.regist-inputin{
+  margin-bottom:70rpx;
+}
+.regist-input view{
+  display: flex;
+  margin-top: 40rpx;
+  border-bottom: 4rpx solid #ccc;
+}
+.doregister{
+  font-size: 30rpx;
+  margin-top: 50rpx;
+  margin-left: 400rpx;
+  color: rgb(179, 177, 177);
+}
+.regist-input view image{
+  border-right:2prpx solid #ccc ;
+  margin-bottom: 20rpx;
+    width: 50rpx;
+    height:50rpx;
+    margin-right: 40rpx;
+}
+.regist-icon image{
+  width: 150rpx;
+  height: 150rpx;
+  margin:50rpx 0 100rpx 260rpx;
+}
+.registBtn{
+  margin-top: 70rpx;
+}
+.registBtn button{
+  width: 100%;
+  background-color: #ee8581;
+  color: #fbd6d6;
+}

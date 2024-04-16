@@ -1,0 +1,23 @@
+<!--pages/index/index.wxml-->
+<view class="main">
+  <view class="txt-nav">
+    <block wx:for="{{navtxt}}" wx:key="this" wx:for-index="in" wx:for-item="ele">
+      <view bindtap="navclick" data-in="{{in}}" data-txt="{{ele}}" class="{{in==nowIndex?'active':''}}">
+        {{ele}}
+      </view>
+    </block>
+
+
+  </view>
+  <view class="img-nav">
+    <block wx:for="{{datalist}}" wx:key="this" wx:for-index="in">
+      <view class="imgbox" bindtap="imgshow" data-index="{{in}}">
+        <image class="bg" src="{{item.photo.path}}"></image>
+        <image mode="widthFix" src="{{item.photo.path}}"></image>
+      
+      </view>
+    </block>
+
+
+  </view>
+</view>

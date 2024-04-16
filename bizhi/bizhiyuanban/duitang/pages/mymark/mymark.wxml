@@ -1,0 +1,23 @@
+<!-- myFavorites.wxml -->
+<view class="container">
+  <!-- 筛选栏 -->
+  <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange" class="filter-picker">
+  <view class="picker-display">分类：{{selectedCategory}}</view>
+</picker>
+
+  <!-- 四宫格图片布局 -->
+  <view class="grid">
+    <block wx:for="{{favorites}}" wx:key="unique">
+      <view class="grid-item">
+        <image class="item-image" src="{{item.imgUrl}}" mode="aspectFill"></image>
+        <view class="item-info">
+          <text class="item-user">上传用户：{{item.uploadUser}}</text>
+          <view class="item-favorites">
+            <text class="favorites-count">{{item.favoritesCount}}</text>
+            <image class="favorites-icon" src="/image/mark.png"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

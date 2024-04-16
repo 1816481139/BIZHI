@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myupload/myupload",
+    "pages/login/login",
+    "pages/hot/hot",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/mydownload/mydownload",
+    "pages/mymark/mymark",
+    "pages/nowupload/nowupload",
+    "pages/register/register",
+    "pages/ceshi/index"
+  ],
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ee8581",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "分类",
+        "iconPath": "./image/sort.png",
+        "selectedIconPath": "./image/sortactive.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热门",
+        "iconPath": "./image/hot.png",
+        "selectedIconPath": "./image/hotactive.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./image/my.png",
+        "selectedIconPath": "./image/myactive.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ee8581",
+    "navigationBarTitleText": "堆糖手机壁纸",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

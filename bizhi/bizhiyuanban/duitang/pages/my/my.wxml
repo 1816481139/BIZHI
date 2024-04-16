@@ -1,0 +1,57 @@
+<view class="wrap">
+  <view class="header_wrap">
+    <!-- 使用三元运算符判断是否显示用户头像或默认头像 -->
+    <image class="avatar" src="{{userInfo.user_img ? userInfo.user_img : '/image/avatar.png'}}" />
+    <!-- 使用三元运算符判断是否显示用户昵称或登录按钮 -->
+    <view bindtap="login" class="header_name" >
+      {{userInfo.user_nick}}
+    </view>
+    <image class="login_icon" src="/image/setting.png" />
+  </view>
+  <view class="edit_self_out">
+    <view class="edit_self_inner">
+      <view class="mine">我  的</view>
+      <view class="my_block">
+        <image class="my_icon" src="/image/myupload.png" bind:tap="upload"/>
+        <view class="btn_text">在线上传</view>
+      </view>
+      <view class="my_block">
+        <image class="my_icon" src="/image/up_img1.png" bindtap="myupload"/>
+        <view class="btn_text">我的上传</view>
+      </view><view class="my_block">
+        <image class="my_icon" src="/image/down_img1.png" bindtap="mydownload"/>
+        <view class="btn_text">我的下载</view>
+      </view><view class="my_block">
+        <image class="my_icon" src="/image/fav_img1.png" bindtap="mymark"/>
+        <view class="btn_text">我的收藏</view>
+      </view>
+
+  </view>
+  </view>
+<view class="outer">
+  <view class="mine">About</view>
+    <view class="item_wrap" bindtap="showAgreementModal">
+    <text class="label">平台协议</text>
+    <image class="icon" src="/image/arrowRight.png" />
+  </view>
+  <view class="modal" hidden="{{isModalHidden}}">
+    <view class="modal_content">
+      <view class="modal_title">平台协议</view>
+      <view class="modal_text">这是一段平台的协议，请仔细阅读。
+      希望大家遵守平台的相关管理规定，尊重版权，感谢支持与理解。</view>
+      <button class="modal_button" bindtap="hideAgreementModal">返回</button>
+    </view>
+  </view>
+  <view class="item_wrap" bindtap="aboutUs">
+    <text class="label">关于我们</text>
+    <image class="icon" src="/image/arrowRight.png" />
+  </view>
+  <view class="item_wrap" bindtap="contactService">
+    <text class="label">咨询客服</text>
+    <image class="icon" src="/image/arrowRight.png" />
+  </view>
+</view>
+  <view class="exit" bindtap="logout">
+    退出登录
+  </view>
+</view>

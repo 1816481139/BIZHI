@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="upload-list">
+    <block wx:for="{{uploadList}}" wx:key="unique">
+      <view class="upload-item">
+        <image class="upload-image" src="{{item.imgUrl}}" mode="aspectFill"></image>
+        <view class="upload-info">
+          <text class="upload-title">{{item.title}}  </text>
+          <text class="upload-time">  {{item.time}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
